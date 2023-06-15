@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".Activity2">
+
+    <TextView
+        android:id="@+id/perguntaTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Você deseja avaliar um filme ou uma série?"
+        android:textSize="20sp"
+        android:layout_centerInParent="true" />
+
+    <RadioGroup
+        android:id="@+id/opcoesRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/perguntaTextView"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/filmeRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filme" />
+
+        <RadioButton
+            android:id="@+id/serieRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Série" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/continuarButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continuar"
+        android:layout_below="@id/opcoesRadioGroup"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="315dp"
+        app:srcCompat="@drawable/activity2" />
+
+</RelativeLayout>
